@@ -1,6 +1,6 @@
 ---
 title: "About"
-permalink: /about
+permalink: /about/
 layout: single
 author_profile: true
 ---
@@ -39,5 +39,3 @@ $$
 \end{align*}
 $$
 Which is the well-known Ridge regression problem.
-
-### 
