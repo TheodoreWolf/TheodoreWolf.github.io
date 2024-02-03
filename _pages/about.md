@@ -9,11 +9,11 @@ author_profile: true
   type="text/javascript">
 </script>
 
-# Intro
+## Intro
 Hello, I am a Machine Learning Engineer with a background in Physics and Chemistry.
 I am very interested in applications of ML to science, particularly to the problem of climate
 change.
-I am currently working as a Machine Learning Engineer at [Carbon Re]("https://carbonre.com/"), 
+I am currently working as a Machine Learning Engineer at <a href="https://carbonre.com/" target=_blank >Carbon Re</a>.
 a startup that uses machine learning to help heavy industry companies reduce their carbon footprint. <br>
 <br>
 Most of my interests revolve around the intersection of ML and the physical sciences.
@@ -21,8 +21,8 @@ Right now I am particularly interested in:
 applications of deep learning to PDEs (PINNs, NeuralODEs...),
 Reinforcement Learning for dynamical systems and Bayesian Deep Learning
 
-# My favourite derivations
-## The MAP estimate of a linear model
+## My favourite derivations
+### The MAP estimate of a linear model
 
 $$
 \begin{align*}
@@ -39,22 +39,5 @@ $$
 \end{align*}
 $$
 Which is the well-known Ridge regression problem.
-## The Particle in a box
-The time-independent Schrödinger equation for a particle in a box is given by:
 
-$$
-\begin{align*}
-  -\frac{\hbar^2}{2m} \frac{d^2 \psi(x)}{dx^2} + V(x) \psi(x) &= E \psi(x) \\
-  -\frac{\hbar^2}{2m} \frac{d^2 \psi(x)}{dx^2} &= (E - V(x)) \psi(x) \\
-\end{align*}
-$$
-
-Where $$V(x) = 0$$ for $$0 < x < L$$ and $$V(x) = \infty$$ otherwise. 
-Solving the equation by inspection we can see that :
-
-$$
-\begin{align*}
-  \psi(x) &= A \sin(kx) + B \cos(kx) \\
-  k &= \frac{\sqrt{2mE}}{\hbar}
-\end{align*}
-$$
+### 

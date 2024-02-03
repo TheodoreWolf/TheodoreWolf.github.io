@@ -1,8 +1,5 @@
 ---
-title: "Blogs"
-permalink: /blogs
-layout: single
-author_profile: true
+layout: posts
+title:  "Blogs"
+permalink: /blogs/
 ---
-
-hello world
