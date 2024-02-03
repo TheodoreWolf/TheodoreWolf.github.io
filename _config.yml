@@ -107,46 +107,49 @@ author:
   name             : "Theo Wolf"
   avatar           : "/assets/images/profile.jpg"
   bio              : "Machine Learning and Physics bloke"
-  location         : "UK"
+  location         : "London, UK"
   email            :
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/TheoW0lf"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/theo-wolf/"
+
+    - label: "Medium"
+      icon: "fab fa-medium"
+      url: "https://medium.com/@theo.wolf"
 
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/TheodoreWolf/"
 
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/theo-wolf/"
+    - label: "Twitter"
+      icon: "fa-brands fa-x-twitter"
+      url: "https://twitter.com/TheoW0lf"
     
     - label: "Google Scholar"
       icon: "fas fa-graduation-cap"
       url: "https://scholar.google.co.uk/citations?user=TRAhumoAAAAJ&hl=en&authuser=1"
 
-    - label: "Medium"
-      icon: "fab fa-medium"
-      url: "https://medium.com/@theo.wolf"
-
-
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/TheoW0lf"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/TheodoreWolf/"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/theo-wolf/"
     - label: "Medium"
       icon: "fab fa-medium"
       url: "https://medium.com/@theo.wolf"
+
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/TheodoreWolf/"
+
+    - label: "Twitter"
+      icon: "fa-brands fa-x-twitter"
+      url: "https://twitter.com/TheoW0lf"
+
+
 
 
 # Reading Files

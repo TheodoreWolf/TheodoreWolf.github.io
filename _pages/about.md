@@ -80,3 +80,8 @@ $$
 \end{align*}
 $$
 Which is the well-known Ridge regression problem.
+
+### The log gradient trick for REINFORCE
+
+### The integral of the Gaussian distribution
+

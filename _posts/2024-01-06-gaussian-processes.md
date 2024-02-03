@@ -6,6 +6,7 @@ layout: single
 classes: wide
 author_profile: true
 header:
+  overlay_image: /assets/images/gps.png
   teaser: /assets/images/gps.png
 ---
 

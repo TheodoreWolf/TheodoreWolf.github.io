@@ -6,6 +6,7 @@ layout: single
 classes: wide
 author_profile: true
 header:
+  overlay_image: /assets/images/coffee.png
   teaser: /assets/images/coffee.png
 ---
 
