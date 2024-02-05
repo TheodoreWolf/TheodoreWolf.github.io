@@ -2,6 +2,7 @@
 layout: single
 title:  "Maths"
 permalink: /maths/
+author_profile: true
 ---
 <script
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
@@ -13,6 +14,7 @@ As a true nerd, I have some favourite derivations and proofs. Here are a few of 
 ## Table of Contents
 1. [The MAP estimate of a linear model](#the-map-estimate-of-a-linear-model)
 2. [The integral of the Gaussian Distribution](#the-integral-of-the-gaussian-distribution)
+3. [The score function trick for REINFORCE](#the-score-function-trick-for-reinforce)
 
 
 
@@ -35,7 +37,7 @@ $$
     &= \arg\min_{\theta} \sum_{i=1}^N (y_i - \theta^T x_i)^2 + \lambda \theta^T \theta \\
 \end{align*}
 $$
-Which is the well-known Ridge regression problem.
+Which is the well-known Ridge regression objective.
 
 
 ### The integral of the Gaussian distribution
@@ -50,7 +52,7 @@ $$
 \end{align*}\\
 $$
 
-We can now swap to polar coordinates by using well known identities.
+We can now swap to polar coordinates by using well-known identities.
 
 $$
   \begin{align*}
@@ -75,4 +77,37 @@ $$
    \int{e^{-x^2} dx} &= \sqrt{\pi}
 \end{align*}
 $$
-<!-- ### The log gradient trick for REINFORCE -->
+
+### The score function trick for REINFORCE
+
+The score function trick is just so elegant, the basis of many algorithms in ML. Here, I show it off for the REINFORCE policy gradient algorithm.
+
+Consider a distribution of states $$d(s)$$ and a 
+parameterised policy $$\pi_{\theta}(a | s)$$. The objective is to maximise the expected reward under the policy.
+
+$$
+\begin{align*}
+  J(\theta) = \mathbb{E}_{\pi_\theta, d}[R(a, s)]\\
+\end{align*}
+$$
+
+$$
+\begin{align*}
+  \nabla_{\theta} J(\theta) &= \nabla_{\theta} \int  d(s) ds  \int \pi_\theta(a | s) R(a, s) da \\
+  &= \int d(s) ds \int \nabla_{\theta} \pi_\theta(a|s) R(a,s) da \\
+  &= \int d(s) ds \int \pi_\theta(a|s) \frac{\nabla_{\theta} \pi_\theta(a|s)}{\pi_\theta(a|s)} R(a,s) da \\
+\end{align*}
+$$
+
+We apply the score function trick: 
+$$\nabla_{\theta} \log \pi_\theta(a|s) = \frac{\nabla_{\theta} \pi_\theta(a|s)}{\pi_\theta(a|s)}$$
+
+
+$$
+\begin{align*}
+  \nabla_{\theta} J(\theta) &= \int d(s) ds \int \pi_\theta(a|s) \nabla_{\theta} \log \pi_\theta(a|s) R(a,s) da \\
+  &= \mathbb{E}_{\pi_\theta, d}[\nabla_{\theta} \log \pi_\theta(a|s) R(a,s)] \\
+\end{align*}
+$$
+
+We can estimate the gradient of the expected reward by sampling and therefore optimise our policy using gradient ascent.
