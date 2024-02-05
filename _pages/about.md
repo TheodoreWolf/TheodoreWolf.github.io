@@ -4,10 +4,7 @@ permalink: /about/
 layout: single
 author_profile: true
 ---
-<script
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-  type="text/javascript">
-</script>
+
 
 ## Intro
 Hello, I am a Machine Learning Engineer with a background in Physics and Chemistry.
@@ -36,6 +33,17 @@ preprocessing the data with AWS lambdas, storing it in AWS timestream.
 This data is then fed to the inference service which loads ML models from WandB and sends the
 results to the online web-platform for the clients to view.
 </details>
+<br>
+<details>
+<summary> <i>Data Science Intern</i>, SuccessData, 6/2021-9/2021 </summary>
+<br>
+Development of an NLP-based tool for sentiment analysis of companies in news articles during a 3-month internship.
+<br>
+Used the Reuters API and company recognition against a set database, sentiment analysis, then uploading grouped results on an online platform for clients to visualise.
+<br>
+Training and fine tuning were done on labelled articles from the client’s Credit Risk analysis team (labelled with positive, neutral, negative). The model was deployed and used by the clients.
+
+</details>
 
 ## Education
 
@@ -61,27 +69,4 @@ universe.
 Did you know that there is 6 times more dark matter than regular matter, and yet we've never
 directly detected it?
 </details>
-
-## My favourite derivations
-### The MAP estimate of a linear model
-
-$$
-\begin{align*}
-  \theta_{\text{MAP}} &= \arg\max_{\theta} p(\theta | \mathcal{D})\\
-    &= \arg\max_{\theta} \frac{p(\mathcal{D} | \theta) p(\theta)}{p(\mathcal{D})} \\
-    &= \arg\max_{\theta} p(\mathcal{D} | \theta) p(\theta) \\
-    &= \arg\max_{\theta} \log p(\mathcal{D} | \theta) + \log p(\theta) \\
-    &= \arg\max_{\theta} \log \prod_{i=1}^N p(y_i | x_i, \theta) + \log p(\theta) \\
-    &= \arg\max_{\theta} \sum_{i=1}^N \log p(y_i | x_i, \theta) + \log p(\theta) \\
-    &= \arg\max_{\theta} \sum_{i=1}^N \log \mathcal{N}(y_i | \theta^T x_i, \sigma^2) + \log \mathcal{N}(\theta | 0, \alpha^2) \\
-    &= \arg\max_{\theta} \sum_{i=1}^N -\frac{1}{2\sigma^2} (y_i - \theta^T x_i)^2 - \frac{1}{2\alpha^2} \theta^T \theta \\
-    &= \arg\min_{\theta} \sum_{i=1}^N (y_i - \theta^T x_i)^2 + \frac{\sigma^2}{\alpha^2} \theta^T \theta \\
-    &= \arg\min_{\theta} \sum_{i=1}^N (y_i - \theta^T x_i)^2 + \lambda \theta^T \theta \\
-\end{align*}
-$$
-Which is the well-known Ridge regression problem.
-
-### The log gradient trick for REINFORCE
-
-### The integral of the Gaussian distribution
 

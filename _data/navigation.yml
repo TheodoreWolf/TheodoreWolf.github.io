@@ -3,12 +3,14 @@ main:
   - title: "About"
     url: /about/
     description: "Find out more about me :)"
-  - title: "Publications"
+  - title: "Publications/Talks"
     url: /publications
-  - title: "Invited Talks"
-    url: /invited-talks
+    description: "Help me fill this up :)"
   - title: "Blogs"
     url: /blogs/
+    description: "Still learning how to write :)"
+  - title: "Maths"
+    url: /maths/
   
 
   # - title: "Sample Posts"
