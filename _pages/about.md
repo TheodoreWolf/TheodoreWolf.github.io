@@ -16,7 +16,9 @@ a startup that uses machine learning to help heavy industry companies reduce the
 Most of my interests revolve around the intersection of ML and the physical sciences.
 Right now I am particularly interested in:
 applications of deep learning to PDEs (PINNs, NeuralODEs...),
-Reinforcement Learning for dynamical systems and Bayesian Deep Learning
+Reinforcement Learning for dynamical systems and Bayesian Deep Learning. <br>
+<br>
+I am looking to pivot into a PhD in the next year. I am interested in the intersection of ML and physical modelling with PDEs, particularly in the context of GCMs, ESMs and IAMs. If you are a researcher in these areas, I would love to hear from you!
 
 ## Experience
 <details>
@@ -37,12 +39,11 @@ results to the online web-platform for the clients to view.
 <details>
 <summary> <i>Data Science Intern</i>, SuccessData, 6/2021-9/2021 </summary>
 <br>
-Development of an NLP-based tool for sentiment analysis of companies in news articles during a 3-month internship.
-<br>
-Used the Reuters API and company recognition against a set database, sentiment analysis, then uploading grouped results on an online platform for clients to visualise.
-<br>
-Training and fine tuning were done on labelled articles from the client’s Credit Risk analysis team (labelled with positive, neutral, negative). The model was deployed and used by the clients.
-
+<ul>
+<li>Development of an NLP-based tool for ENGIE during a 3-month internship.</li>
+<li> Used the Reuters API as well as FinBERT, spaCy, flair in a live pipeline, the results were uploaded on our platform for the Credit Risk team at ENGIE to view. </li>
+<li> Fine-tuning was done on labelled articles from the ENGIE’s Credit Risk analysis team. </li>
+</ul>
 </details>
 
 ## Education
