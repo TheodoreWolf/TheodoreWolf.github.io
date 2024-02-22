@@ -27,7 +27,7 @@ You can find my NeurIPS publication <a href="https://arxiv.org/abs/2312.06527" t
 <details>
 <summary><i>London 2050</i>, UCL Engineering 2024</summary> 
 <br>
-Invited for a panel with BNP Paribas and ABB to talk about the future of London. 
+Invited for a presentation and then a panel with BNP Paribas and ABB to talk about AI and sustainability. 
 </details>
 <br>
 
@@ -41,7 +41,7 @@ I spoke about my experience as a Machine Learning Engineer at Carbon Re, a clima
 <details>
 <summary><i>Tips on running a succesful Masters Project</i>, UCL AI for Sustainable Development cohort 2022</summary> 
 <br>
-My Masters project was a huge success and I was invited to give a talk to the incoming students on how to run a successful project by my supervisor Maria Perez Ortiz who is the head of the course. I talked about the importance of a preparing correctly. Especially, given that I had created my own topic. 
+I did very well on my Masters Project and I was invited to give a talk to the incoming students on how to run a successful project by my supervisor Maria Perez Ortiz who is the head of the course. I talked about the importance of a preparing correctly. Especially, given that I had created my own topic. 
 </details>
 <br>
 
