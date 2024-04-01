@@ -15,6 +15,7 @@ As a true nerd, I have some favourite derivations and proofs. Here are a few of 
 1. [The MAP estimate of a linear model](#the-map-estimate-of-a-linear-model)
 2. [The integral of the Gaussian Distribution](#the-integral-of-the-gaussian-distribution)
 3. [The score function trick for REINFORCE](#the-score-function-trick-for-reinforce)
+4. [Mass energy Equivalence](#mass-energy-equicalence)
 
 
 
@@ -111,3 +112,23 @@ $$
 $$
 
 We can estimate the gradient of the expected reward by sampling and therefore optimise our policy using gradient ascent.
+
+### Mass energy Equivalence
+The assumptions of special relativity lead to the most famous equation in physics: $$ E=mc^2$$. It derives naturally from the assumption that the speed of light is the same in all frames of reference.
+
+Starting from the definition of Kinetic energy:
+$$ 
+\begin{align*}
+\frac{dK}{dt} = v\frac{dp}{dt} = vm\frac{d}{dt}(\gamma v)
+\end{align*}
+$$
+Where we use the relativistic momentum: $$ p =  \gamma mv $$, where $$\gamma$$ is the Lorentz transform:
+$$
+\begin{align*}
+\frac{d(\gamma v)}{dt} = \frac{d}{dt} \frac{v}{\sqrt{1-v^2/c^2}}
+
+$$
+E = m * c^2
+
+
+
