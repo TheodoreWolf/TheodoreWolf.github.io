@@ -123,7 +123,7 @@ $$
 \end{align*}
 $$
 
-Where we have used the relativistic momentum: $$ p =  \gamma mv $$, and $$\gamma = (1-v^2/c^2)^{-1/2}$$ is the [Lorentz factor](https://en.wikipedia.org/wiki/Lorentz_factor):
+Where we have used the relativistic momentum: $$ p =  \gamma mv $$, and $$\gamma = (1-v^2/c^2)^{-1/2}$$ is the <a href="https://en.wikipedia.org/wiki/Lorentz_factor" target=_blank >Lorentz factor</a>:
 
 $$
 \begin{align*}
