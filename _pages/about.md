@@ -18,7 +18,7 @@ Right now I am particularly interested in:
 applications of deep learning to PDEs (PINNs, NeuralODEs...),
 Reinforcement Learning for dynamical systems and Bayesian Deep Learning. <br>
 <br>
-I am looking to pivot into a PhD in the next year. I am interested in the intersection of ML and physical modelling with PDEs, particularly in the context of GCMs, ESMs and IAMs. If you are a researcher in these areas, I would love to hear from you!
+I am starting a PhD at the University of Oxford in October 2024. I am interested in the intersection of ML and physical modelling with PDEs, particularly in the context of GCMs, ESMs and IAMs. If you are a researcher in these areas, I would love to hear from you!
 
 ## Experience
 <details>
