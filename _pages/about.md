@@ -4,7 +4,7 @@ permalink: /about/
 layout: single
 author_profile: true
 ---
-
+![alt text](../assets/images/nbody.gif)
 
 ## Intro
 Hello, I am a Machine Learning Engineer with a background in Physics and Chemistry.
