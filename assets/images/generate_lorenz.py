@@ -1,4 +1,4 @@
-"""@Theo Wolf 2024, generates a pretty gif of the Lorenz attractor"""
+"""@TheodoreWolf 2024, generates a pretty gif of the Lorenz attractor"""
 
 import numpy as np
 import matplotlib.pyplot as plt
