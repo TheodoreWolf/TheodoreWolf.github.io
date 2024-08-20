@@ -3,6 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
+from tqdm import tqdm
 
 """
 Create Your Own N-body Simulation (With Python)
@@ -119,7 +120,7 @@ def main():
     PE_save[0] = PE    
 
     # Simulation Main Loop
-    for i in range(Nt):
+    for i in tqdm(range(Nt)):
         # (1/2) kick
         vel += acc * dt/2.0
 
@@ -179,7 +180,7 @@ def main():
 
         return (scat, *lines)
 
-    for j in np.arange(0, 1000, 1):
+    for j in tqdm(np.arange(0, 1000, 2)):
         update(int(j))
         writer.grab_frame()
     writer.finish()
