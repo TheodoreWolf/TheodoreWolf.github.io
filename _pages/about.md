@@ -60,12 +60,12 @@ directly detected it?
 ## Experience
 <details>
 
-<summary> <i>Machine Learning Engineer</i>, Carbon Re, 2022-Present </summary>
+<summary> <i>Machine Learning Engineer</i>, Carbon Re, 2022-2024 </summary>
 <br>
-I am tasked with making ML models based on high dimensional industrial time series.
+I was tasked with making ML models based on high dimensional industrial time series.
 Most of the focus is on cement data which involves complex physical interactions.
 <br>
-The work also involves maintaining a complex production environment. The pipeline consists of
+The work also involved maintaining a complex production environment. The pipeline consists of
 many steps:
 requesting live data from an API or MQTT (depending on the client),
 preprocessing the data with AWS lambdas, storing it in AWS timestream.
