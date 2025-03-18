@@ -5,7 +5,7 @@ importance: 2
 category: derivations
 ---
 
-This one is simple and elegant and a nice bridge between the frequentist and Bayesian worlds.
+This one is simple, elegant and a nice bridge between the frequentist and Bayesian worlds.
 
 $$
 \begin{align*}
