@@ -394,8 +394,8 @@ ninja.data = [{
           description: "",
           section: "Derivations",handler: () => {
               window.location.href = "/derivations/emc2/";
-            },},{id: "derivations-the-exponential-function-as-a-solution-to-linear-dynamical-systems",
-          title: 'The exponential function as a solution to linear dynamical systems',
+            },},{id: "derivations-linear-dynamical-systems",
+          title: 'Linear dynamical systems',
           description: "",
           section: "Derivations",handler: () => {
               window.location.href = "/derivations/exponential/";
