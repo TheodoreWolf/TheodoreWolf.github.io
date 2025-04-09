@@ -22,6 +22,11 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
-My name is Theo, I am a PhD student at the University of Oxford. I am interested in using ML to help accelerate scientific research. I also am more broadly interested in the intersection of ML and physics. One specific application of this that I think is important is the use of ML to help with climate change. My background is in astrophyiscs and physical chemistry. 
+My name is Theo, I am a PhD student at the University of Oxford. 
+I am broadly interested in using ML to help accelerate scientific research. 
+Specifically, I am interested in the intersection of ML and physics. 
+I believe that ML can contribute a lot to modelling and understanding complex physical systems. 
+One specific application of this that I think is important is the use of ML to help with climate change. 
+My background is in astrophyiscs and physical chemistry. 
 
 <!-- My Erdős number is 3. -->
