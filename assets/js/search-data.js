@@ -445,6 +445,11 @@ ninja.data = [{
           description: "The material that civilisations are built on",
           section: "Projects",handler: () => {
               window.location.href = "/projects/clinker/";
+            },},{id: "projects-rlhf-for-llms-and-deepseek-r1",
+          title: 'RLHF for LLMs and DeepSeek-R1',
+          description: "How DeepSeek changed the game when it comes to using Reinforcement Learning for LLMs",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/deepseek_rlhf/";
             },},{id: "projects-gaussian-processes-from-scratch",
           title: 'Gaussian Processes, from scratch',
           description: "Gain a deeper understanding of Gaussian processes by implementing them with only NumPy",
