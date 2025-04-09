@@ -24,4 +24,4 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 My name is Theo, I am a PhD student at the University of Oxford. I am interested in using ML to help accelerate scientific research. I also am more broadly interested in the intersection of ML and physics. One specific application of this that I think is important is the use of ML to help with climate change. My background is in astrophyiscs and physical chemistry. 
 
-My Erdős number is 3.
+<!-- My Erdős number is 3. -->
