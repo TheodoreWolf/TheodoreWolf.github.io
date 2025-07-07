@@ -450,6 +450,11 @@ ninja.data = [{
           description: "How DeepSeek changed the game when it comes to using Reinforcement Learning for LLMs",
           section: "Projects",handler: () => {
               window.location.href = "/projects/deepseek_rlhf/";
+            },},{id: "projects-no-more-confusion-about-diffusion",
+          title: 'No more confusion about diffusion',
+          description: "Explaning Flow and Diffusion models from the ground up",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/diffusion/";
             },},{id: "projects-gaussian-processes-from-scratch",
           title: 'Gaussian Processes, from scratch',
           description: "Gain a deeper understanding of Gaussian processes by implementing them with only NumPy",
