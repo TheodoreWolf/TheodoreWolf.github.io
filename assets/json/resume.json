@@ -98,6 +98,34 @@
       "releaseDate": "2023-12",
       "url": "https://www.climatechange.ai/papers/neurips2023/50",
       "summary": "This paper explored the potential to use Reinforcement Learning to better explore complex climate models and exploit potential feedback loops."
+    },
+    {
+      "name": "Model-Based Meta-Learning for Algorithm Discovery",
+      "publisher": "ICLR 2026 Workshop on World Models: Understanding, Modelling and Scaling",
+      "releaseDate": "2026",
+      "url": "https://openreview.net/forum?id=OadAJrqkqc",
+      "summary": ""
+    },
+    {
+      "name": "Evolution Strategies at the Hyperscale",
+      "publisher": "ICML 2026",
+      "releaseDate": "2026",
+      "url": "https://arxiv.org/abs/2511.16652",
+      "summary": ""
+    },
+    {
+      "name": "Procedural Generation of Algorithm Discovery Tasks in Machine Learning",
+      "publisher": "ICML 2026",
+      "releaseDate": "2026",
+      "url": "https://arxiv.org/abs/2603.17863",
+      "summary": ""
+    },
+    {
+      "name": "Assessing the Robustness of Climate Foundation Models under No-Analog Distribution Shifts",
+      "publisher": "arXiv",
+      "releaseDate": "2026",
+      "url": "https://arxiv.org/abs/2603.23043",
+      "summary": ""
     }
   ],
   "skills": [

@@ -32,3 +32,6 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+"wolf":
+  - firstname: ["Theo"]
+    url: https://theo-wolf.com
