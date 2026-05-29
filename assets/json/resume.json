@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Theo Wolf",
-    "label": "Scientist (in training)",
+    "label": "Scientist",
     "image": "",
     "email": "theo@robots.ox.ac.uk",
     "phone": "",
@@ -34,7 +34,7 @@
   },
   "work": [
     {
-      "name": "Carbon Re",
+      "name": "Gigaton (Previously Carbon Re)",
       "position": "Machine Learning Engineer",
       "url": "https://carbonre.com",
       "startDate": "2022-08-03",

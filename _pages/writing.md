@@ -1,15 +1,15 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: Things I've been working on.
+title: writing
+permalink: /writing/
+description: Some stuff I wrote.
 nav: true
-nav_order: 3
+nav_order: 6
 display_categories: [fun, work]
 horizontal: false
 ---
 
-<!-- pages/projects.md -->
+<!-- pages/writing.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->

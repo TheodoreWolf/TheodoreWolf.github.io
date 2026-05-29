@@ -25,12 +25,11 @@ Put your address / P.O. box / other info right below your picture. You can also 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
 
-My name is Theo, I am a PhD student at the University of Oxford. My background is in astrophyiscs, physical chemistry, machine learning and control. 
+Welcome! My name is Theo, I am a PhD student at the University of Oxford. My background is in astrophysics, physical chemistry, machine learning and control. 
 
-I am broadly interested in using ML to help accelerate scientific research. 
-Specifically, I am interested in system identification, complex systems modelling, and control.
-<!-- I believe that ML can help in mitigating climate change, and want to contribute to this.  -->
-I currently am working on ML applied to nuclear fusion. 
+I am broadly interested in using ML to help accelerate scientific research for the benefit of mankind. 
+More specifically I have interests in system identification, complex systems modelling, and control.
+Currently, I am working on Reinforcement Learning applied to nuclear fusion. 
 On the side, I also work on [hyperoptax](https://github.com/TheodoreWolf/hyperoptax), a hyperparameter tuning library in pure JAX. 
 
 
