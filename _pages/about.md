@@ -32,6 +32,8 @@ More specifically I have interests in system identification, complex systems mod
 Currently, I am working on Reinforcement Learning applied to nuclear fusion. 
 On the side, I also work on [hyperoptax](https://github.com/TheodoreWolf/hyperoptax), a hyperparameter tuning library in pure JAX. 
 
+You can find my <a href="{{ '/assets/pdf/CV_TW.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">CV here</a>.
+
 
 
 <!-- My Erdős number is 3. -->
