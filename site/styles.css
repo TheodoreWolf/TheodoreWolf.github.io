@@ -73,6 +73,7 @@ a:hover {
 }
 
 a:focus-visible,
+button:focus-visible,
 canvas:focus-visible {
   outline: 2px solid var(--rust);
   outline-offset: 4px;
@@ -139,11 +140,126 @@ h3 {
 }
 
 .wordmark {
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
   font-family: var(--serif);
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: -0.03em;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.lorenz-warhol {
+  width: min(94vw, calc(100svh - 2rem));
+  max-width: none;
+  max-height: none;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+}
+
+.lorenz-warhol::backdrop {
+  background: rgba(44, 42, 35, 0.84);
+  backdrop-filter: blur(0.45rem);
+  -webkit-backdrop-filter: blur(0.45rem);
+}
+
+.lorenz-warhol-panel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.lorenz-warhol-grid {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  gap: clamp(2px, 0.32vw, 4px);
+  overflow: hidden;
+  border: 0;
+  background: var(--ink);
+  box-shadow: 0 1.5rem 4rem rgba(22, 20, 16, 0.38);
+  cursor: pointer;
+}
+
+.lorenz-warhol-grid canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
+.lorenz-warhol-grid canvas:nth-child(1) {
+  background: #f6b6c8;
+}
+
+.lorenz-warhol-grid canvas:nth-child(2) {
+  background: #a8d8c8;
+}
+
+.lorenz-warhol-grid canvas:nth-child(3) {
+  background: #f7d58b;
+}
+
+.lorenz-warhol-grid canvas:nth-child(4) {
+  background: #b9c8f0;
+}
+
+.lorenz-warhol-grid canvas:nth-child(5) {
+  background: #efb38e;
+}
+
+.lorenz-warhol-grid canvas:nth-child(6) {
+  background: #d7b7df;
+}
+
+.lorenz-warhol-grid canvas:nth-child(7) {
+  background: #a9dce3;
+}
+
+.lorenz-warhol-grid canvas:nth-child(8) {
+  background: #f3c1a4;
+}
+
+.lorenz-warhol-grid canvas:nth-child(9) {
+  background: #c7d79b;
+}
+
+.lorenz-warhol-close {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.55rem;
+  z-index: 1;
+  display: grid;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  place-items: center;
+  border: 1px solid rgba(44, 42, 35, 0.68);
+  border-radius: 50%;
+  color: var(--ink);
+  background: rgba(240, 232, 216, 0.88);
+  font-family: var(--sans);
+  font-size: 1.45rem;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.lorenz-warhol-close:hover {
+  color: var(--paper-light);
+  background: var(--ink);
+  transform: rotate(8deg);
 }
 
 .site-nav {
@@ -722,6 +838,7 @@ main,
 @media print {
   .site-header,
   .gravity-banner,
+  .lorenz-warhol,
   .site-footer a {
     display: none;
   }

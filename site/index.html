@@ -38,6 +38,7 @@
       defer
     ></script>
     <script src="gravity.js" defer></script>
+    <script src="lorenz-warhol.js" defer></script>
   </head>
   <body>
     <svg class="svg-definitions" aria-hidden="true">
@@ -81,7 +82,15 @@
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="site-header" aria-label="Primary navigation">
-      <a class="wordmark" href="#top" aria-label="Theo Wolf, back to top">TW</a>
+      <button
+        class="wordmark"
+        type="button"
+        aria-label="Open Lorenz Warhol"
+        aria-controls="lorenz-warhol"
+        aria-expanded="false"
+      >
+        TW
+      </button>
       <nav class="site-nav" aria-label="Sections">
         <a href="#about" data-nav-link>About</a>
         <a href="#publications" data-nav-link>Publications</a>
@@ -90,6 +99,38 @@
         <a href="#contact" data-nav-link>Contact</a>
       </nav>
     </header>
+
+    <dialog
+      class="lorenz-warhol"
+      id="lorenz-warhol"
+      aria-labelledby="lorenz-warhol-title"
+    >
+      <div class="lorenz-warhol-panel">
+        <h2 class="sr-only" id="lorenz-warhol-title">Lorenz Warhol</h2>
+        <button
+          class="lorenz-warhol-close"
+          type="button"
+          aria-label="Close Lorenz Warhol"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+        <button
+          class="lorenz-warhol-grid"
+          type="button"
+          aria-label="Nine animated Lorenz attractors. Reset all simulations to their initial conditions."
+        >
+          <canvas aria-hidden="true"></canvas>
+          <canvas aria-hidden="true"></canvas>
+          <canvas aria-hidden="true"></canvas>
+          <canvas aria-hidden="true"></canvas>
+          <canvas aria-hidden="true"></canvas>
+          <canvas aria-hidden="true"></canvas>
+          <canvas aria-hidden="true"></canvas>
+          <canvas aria-hidden="true"></canvas>
+          <canvas aria-hidden="true"></canvas>
+        </button>
+      </div>
+    </dialog>
 
     <main id="main-content">
       <section class="hero" id="top" aria-labelledby="hero-title">
