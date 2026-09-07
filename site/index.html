@@ -37,7 +37,7 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <script src="gravity.js" defer></script>
+    <script type="module" src="gravity.js"></script>
     <script src="lorenz-warhol.js" defer></script>
   </head>
   <body>
@@ -141,15 +141,43 @@
           </p>
         </div>
         <div class="gravity-banner" id="gravity-banner">
-          <canvas id="gravity-canvas" aria-hidden="true"></canvas>
-          <p class="gravity-energy" id="gravity-energy">
-            Kinetic Energy: ~<span id="gravity-energy-value">0.000e+0</span>
-          </p>
+          <canvas
+            id="gravity-canvas"
+            role="button"
+            tabindex="0"
+            aria-label="Fusion simulation. Click or hold to add protons."
+          ></canvas>
+          <div class="gravity-energy-ledger" aria-label="Energy ledger">
+            <p class="gravity-energy">
+              Total Energy:
+              <span class="gravity-energy-value" id="gravity-total-energy-value">
+                0.000 MeV
+              </span>
+            </p>
+            <p class="gravity-energy">
+              Rest Mass:
+              <span class="gravity-energy-value" id="gravity-rest-mass-value">
+                0.000 MeV
+              </span>
+            </p>
+            <p class="gravity-energy" id="gravity-energy">
+              Kinetic Energy:
+              <span class="gravity-energy-value" id="gravity-energy-value">
+                0.000 MeV
+              </span>
+            </p>
+          </div>
           <p class="sr-only">
-            A decorative real-time gravity simulation. Moving a pointer over the
-            banner introduces a larger mass that attracts the other bodies. The
-            scroll wheel changes its mass, and clicking produces a short
-            repulsive pulse around the pointer.
+            A decorative simulation of proton–proton and triple-alpha fusion.
+            Red protons scatter or fuse directly into deuterium while emitting
+            a positron and neutrino. Composite nuclei contain red protons and
+            black neutrons. Two helium nuclei may form beryllium-8, which
+            decays back into two helium nuclei after five seconds unless it
+            first captures a third helium nucleus to make carbon-12. Reactions
+            emit photons while conserving relativistic energy and momentum.
+            Click or press and hold the simulation to add protons with a small
+            velocity in a random direction. Keyboard users can press or hold
+            Space or Enter.
           </p>
         </div>
       </section>
@@ -501,6 +529,131 @@
             Short mathematical notes, worked from first principles.
           </p>
           <div class="line-list derivation-list">
+            <details class="derivation-item">
+              <summary class="derivation-summary">
+                <span class="line-label"
+                  >The evidence lower bound (ELBO)</span
+                >
+                <span class="line-rule" aria-hidden="true"></span>
+                <span class="derivation-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="derivation-body">
+                <p>
+                  Given observations \(\mathcal D = \{x_i\}_{i=1}^{N}\) from an
+                  unknown data-generating distribution, the goal is to fit a
+                  distribution from which we can generate new samples.
+                </p>
+
+                \[ \mathcal D = \{x_i\}_{i=1}^{N}
+                \overset{\mathrm{iid}}{\sim} p_{\mathrm{data}}(x), \qquad
+                p_\theta(x) \approx p_{\mathrm{data}}(x)
+                \quad \Longrightarrow \quad
+                \widetilde{x} \sim p_\theta(x). \]
+
+                <p>
+                  Parameterise the model by \(\theta\), then choose the
+                  parameters that assign the greatest likelihood to the
+                  observed dataset:
+                </p>
+
+                \[ \theta^\star
+                = \underset{\theta}{\arg\max}\;
+                \log p_\theta(\mathcal D). \]
+
+                <p>Introduce latent variables \(z_i\) that explain the data:</p>
+
+                \[ z_i \sim p(z_i), \qquad
+                x_i \sim p_\theta(x_i \mid z_i), \qquad
+                \mathcal Z = \{z_i\}_{i=1}^{N}, \]
+
+                \[ p_\theta(\mathcal D,\mathcal Z)
+                = \prod_{i=1}^{N}
+                p_\theta(x_i \mid z_i)p(z_i). \]
+
+                \[ \underbrace{p_\theta(\mathcal D)}_{\text{evidence}}
+                = \underbrace{\int p_\theta(\mathcal D,\mathcal Z)
+                \,d\mathcal Z}_{\text{marginalise every latent}}
+                = \prod_{i=1}^{N}
+                \int p_\theta(x_i \mid z_i)p(z_i)\,dz_i, \qquad
+                d\mathcal Z = \prod_{i=1}^{N}dz_i. \]
+
+                \[ \log p_\theta(\mathcal D)
+                = \sum_{i=1}^{N}
+                \log \underbrace{\int p_\theta(x_i \mid z_i)p(z_i)\,dz_i}_
+                {\text{generally intractable}}. \]
+
+                <p>
+                  Introduce the tractable encoder \(q_\phi(z_i \mid x_i)\) to
+                  approximate the intractable posterior
+                  \(p_\theta(z_i \mid x_i)\).
+                </p>
+
+                \[ \begin{align*}
+                \log p_\theta(x_i)
+                &= \log \mathbb{E}_{q_\phi(z_i \mid x_i)}
+                \left[\frac{p_\theta(x_i,z_i)}
+                {q_\phi(z_i \mid x_i)}\right] \\
+                &\underset{\href{https://en.wikipedia.org/wiki/Jensen's_inequality}
+                {\text{Jensen's inequality}}}{\geq}
+                \underbrace{\mathbb{E}_{q_\phi(z_i \mid x_i)}
+                \left[\log \frac{p_\theta(x_i,z_i)}
+                {q_\phi(z_i \mid x_i)}\right]}_
+                {\displaystyle \mathcal L_{\mathrm{ELBO}}(x_i)} \\
+                &= \mathbb{E}_{q_\phi(z_i \mid x_i)}
+                \left[\log p_\theta(x_i \mid z_i)\right]
+                - D_{\mathrm{KL}}\!\left(
+                q_\phi(z_i \mid x_i)\,\|\,p(z_i)\right).
+                \end{align*} \]
+
+                \[ \log p_\theta(\mathcal D)
+                \geq \sum_{i=1}^{N}\mathcal L_{\mathrm{ELBO}}(x_i)
+                \equiv \mathcal L_{\mathrm{ELBO}}(\mathcal D). \]
+
+                <p>For a Gaussian VAE with fixed decoder variance:</p>
+
+                \[ \begin{align*}
+                p(z_i) &= \mathcal{N}(0,I)
+                && \text{prior}, \\
+                q_\phi(z_i \mid x_i)
+                &= \mathcal{N}\!\left(\mu_\phi(x_i),
+                \operatorname{diag}(\sigma_\phi^2(x_i))\right)
+                && \text{encoder}, \\
+                p_\theta(x_i \mid z_i)
+                &= \mathcal{N}\!\left(f_\theta(z_i),\sigma_x^2 I\right)
+                && \text{decoder}.
+                \end{align*} \]
+
+                \[ -\mathbb{E}_{q_\phi(z_i \mid x_i)}
+                \!\left[\log p_\theta(x_i \mid z_i)\right]
+                = \frac{1}{2\sigma_x^2}
+                \mathbb{E}_{q_\phi(z_i \mid x_i)}
+                \left[\lVert x_i-f_\theta(z_i)\rVert_2^2\right]
+                + \frac{d_x}{2}\log(2\pi\sigma_x^2). \]
+
+                \[ D_{\mathrm{KL}}\!\left(
+                q_\phi(z_i \mid x_i)\,\|\,p(z_i)\right)
+                = \frac{1}{2}\sum_{j=1}^{d_z}
+                \left(
+                \mu_{\phi,j}(x_i)^2 + \sigma_{\phi,j}(x_i)^2
+                - \log \sigma_{\phi,j}(x_i)^2 - 1\right). \]
+
+                \[ \boxed{\begin{aligned}
+                (\theta^\star,\phi^\star)
+                &= \underset{\theta,\phi}{\arg\min}\;
+                -\frac{1}{N}\mathcal L_{\mathrm{ELBO}}(\mathcal D) \\
+                &= \underset{\theta,\phi}{\arg\min}\;
+                \frac{1}{N}\sum_{i=1}^{N}\Bigg[
+                \underbrace{\frac{1}{2\sigma_x^2}
+                \mathbb{E}_{q_\phi(z_i \mid x_i)}
+                \lVert x_i-f_\theta(z_i)\rVert_2^2}_
+                {\text{reconstruction}}
+                + \underbrace{D_{\mathrm{KL}}\!\left(
+                q_\phi(z_i \mid x_i)\,\|\,p(z_i)\right)}_
+                {\text{regularisation}}\Bigg].
+                \end{aligned}} \]
+              </div>
+            </details>
+
             <details class="derivation-item">
               <summary class="derivation-summary">
                 <span class="line-label">Linear dynamical systems</span>
