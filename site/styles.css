@@ -567,6 +567,32 @@ main,
   line-height: 1.45;
 }
 
+.entry-row.outreach-entry,
+.entry-row.experience-entry,
+.entry-row.education-entry {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.outreach-details,
+.experience-details,
+.education-details {
+  max-width: 65ch;
+  margin: 0.75rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+ul.outreach-details,
+ul.education-details {
+  padding-left: 1.2rem;
+}
+
+.outreach-details li + li,
+.education-details li + li {
+  margin-top: 0.45rem;
+}
+
 .entry-links {
   display: flex;
   flex-direction: column;
@@ -645,10 +671,6 @@ main,
   text-align: left !important;
 }
 
-.contact-section {
-  padding-bottom: clamp(5rem, 11vw, 9rem);
-}
-
 .contact-icons {
   display: flex;
   flex-wrap: wrap;
@@ -674,6 +696,15 @@ main,
 .contact-icons a:hover {
   color: var(--rust-dark);
   transform: translateY(-0.12rem);
+}
+
+.about-contact-icons {
+  margin-top: 1.5rem;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.about-contact-icons a {
+  font-size: 1.6rem;
 }
 
 .contact-icon {

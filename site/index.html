@@ -94,9 +94,11 @@
       <nav class="site-nav" aria-label="Sections">
         <a href="#about" data-nav-link>About</a>
         <a href="#publications" data-nav-link>Publications</a>
+        <a href="#experience" data-nav-link>Experience</a>
+        <a href="#education" data-nav-link>Education</a>
         <a href="#writing" data-nav-link>Writing</a>
         <a href="#derivations" data-nav-link>Derivations</a>
-        <a href="#contact" data-nav-link>Contact</a>
+        <a href="#outreach" data-nav-link>Outreach</a>
       </nav>
     </header>
 
@@ -193,14 +195,15 @@
               <p>
                 I am a PhD student at the University of Oxford, with a
                 background in astrophysics, physical chemistry, machine
-                learning, and control.
+                learning, and control. I work with Jakob Foerster at BOLD and Ingmar Posner at A2I.
               </p>
               <p>
                 I am broadly interested in using machine learning to accelerate
                 scientific research for the benefit of mankind. More
                 specifically, I work on system identification, complex-systems
                 modelling, and control. I am currently applying reinforcement
-                learning to nuclear fusion.
+                learning to nuclear fusion. I also have an interest in optimization 
+                in billions of dimensions, with applications to finetuning of large models.
               </p>
               <p>
                 On the side, I work on
@@ -209,7 +212,13 @@
                   target="_blank"
                   rel="noreferrer"
                   >hyperoptax</a
-                >, a hyperparameter-tuning library written in pure JAX.
+                >, a hyperparameter-tuning library written in pure JAX. I also work on
+                <a
+                  href="https://github.com/TheodoreWolf/plasmax"
+                  target="_blank"
+                  rel="noreferrer"
+                  >plasmax</a
+                >, a gym-style benchmark for tokamak kinetic control.
               </p>
             </div>
             <figure class="profile-portrait">
@@ -232,6 +241,88 @@
                 >View PDF <span aria-hidden="true">↗</span></a
               >
             </div>
+          </div>
+
+          <div class="contact-icons about-contact-icons" aria-label="Contact and social links">
+            <a href="mailto:theo@robots.ox.ac.uk" aria-label="Email">
+              <svg
+                class="contact-icon"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use href="#icon-email"></use>
+              </svg>
+            </a>
+            <a
+              href="https://github.com/TheodoreWolf"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+            >
+              <svg
+                class="contact-icon"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use href="#icon-github"></use>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/theo-wolf"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg
+                class="contact-icon"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use href="#icon-linkedin"></use>
+              </svg>
+            </a>
+            <a
+              href="https://medium.com/@theo.wolf"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Medium"
+            >
+              <svg
+                class="contact-icon"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use href="#icon-medium"></use>
+              </svg>
+            </a>
+            <a
+              href="https://scholar.google.com/citations?user=TRAhumoAAAAJ"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Google Scholar"
+            >
+              <svg
+                class="contact-icon"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use href="#icon-scholar"></use>
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com/TheoW0lf"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="X"
+            >
+              <svg
+                class="contact-icon"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use href="#icon-x"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -363,9 +454,117 @@
         </div>
       </section>
 
-      <section class="section" id="writing" aria-labelledby="writing-title">
+      <section
+        class="section"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
         <header class="section-heading">
           <p class="section-index">03</p>
+          <h2 id="experience-title">Work experience</h2>
+        </header>
+        <div class="section-content">
+          <div class="entry-list">
+            <article class="entry-row experience-entry">
+              <div class="entry-copy">
+                <p class="entry-meta">2025 · University of Oxford</p>
+                <h3>Teaching Assistant</h3>
+                <p class="experience-details">
+                  Machine Learning course, AIMS DPhil programme.
+                </p>
+              </div>
+            </article>
+
+            <article class="entry-row experience-entry">
+              <div class="entry-copy">
+                <p class="entry-meta">
+                  2022–2024 · Gigaton
+                </p>
+                <h3>Machine Learning Engineer</h3>
+                <p class="experience-details">
+                  Previously Carbon Re. Developed machine learning models for
+                  live process control in cement plants.
+                </p>
+              </div>
+            </article>
+
+            <article class="entry-row experience-entry">
+              <div class="entry-copy">
+                <p class="entry-meta">
+                  2020–2022 · MyTutor &amp; Clarendon Tutors
+                </p>
+                <h3>Tutor</h3>
+                <p class="experience-details">
+                  Taught French, chemistry, physics, and mathematics online and
+                  in person.
+                </p>
+              </div>
+            </article>
+
+            <article class="entry-row experience-entry">
+              <div class="entry-copy">
+                <p class="entry-meta">2021 · SuccessData</p>
+                <h3>Data Science Intern</h3>
+                <p class="experience-details">
+                  Built a news sentiment classifier for ENGIE's credit risk
+                  team.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education" aria-labelledby="education-title">
+        <header class="section-heading">
+          <p class="section-index">04</p>
+          <h2 id="education-title">Education</h2>
+        </header>
+        <div class="section-content">
+          <div class="entry-list">
+            <article class="entry-row education-entry">
+              <div class="entry-copy">
+                <p class="entry-meta">2024–present · University of Oxford</p>
+                <h3>DPhil in Autonomous Intelligent Machines and Systems</h3>
+                <p class="education-details">
+                  Supervised by Jakob Foerster and Ingmar Posner.
+                </p>
+              </div>
+            </article>
+
+            <article class="entry-row education-entry">
+              <div class="entry-copy">
+                <p class="entry-meta">2021–2022 · University College London</p>
+                <h3>MSc in Machine Learning</h3>
+              </div>
+            </article>
+
+            <article class="entry-row education-entry">
+              <div class="entry-copy">
+                <p class="entry-meta">2018–2021 · University College London</p>
+                <h3>BSc in Astrophysics and Physical Chemistry</h3>
+              </div>
+            </article>
+
+            <article class="entry-row education-entry">
+              <div class="entry-copy">
+                <h3>Schools &amp; Programmes</h3>
+                <ul class="education-details">
+                  <li>2026 · G-Research — <em>Spring into Quant Finance</em>.</li>
+                  <li>
+                    2025 · Eastern European Machine Learning Summer School
+                    (EEML).
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="writing" aria-labelledby="writing-title">
+        <header class="section-heading">
+          <p class="section-index">05</p>
           <h2 id="writing-title">Writing</h2>
         </header>
         <div class="section-content">
@@ -521,7 +720,7 @@
         aria-labelledby="derivations-title"
       >
         <header class="section-heading">
-          <p class="section-index">04</p>
+          <p class="section-index">06</p>
           <h2 id="derivations-title">Derivations</h2>
         </header>
         <div class="section-content">
@@ -926,108 +1125,95 @@
         </div>
       </section>
 
-      <section
-        class="section contact-section"
-        id="contact"
-        aria-labelledby="contact-title"
-      >
+      <section class="section" id="outreach" aria-labelledby="outreach-title">
         <header class="section-heading">
-          <p class="section-index">05</p>
-          <h2 id="contact-title">Contact</h2>
+          <p class="section-index">07</p>
+          <h2 id="outreach-title">Outreach</h2>
         </header>
         <div class="section-content">
-          <p class="section-intro">The best way to reach me is by email.</p>
-          <div class="contact-icons" aria-label="Contact and social links">
-            <a href="mailto:theo@robots.ox.ac.uk" aria-label="Email">
-              <svg
-                class="contact-icon"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use href="#icon-email"></use>
-              </svg>
-            </a>
-            <a
-              href="https://github.com/TheodoreWolf"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="GitHub"
-            >
-              <svg
-                class="contact-icon"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use href="#icon-github"></use>
-              </svg>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/theo-wolf"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="LinkedIn"
-            >
-              <svg
-                class="contact-icon"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use href="#icon-linkedin"></use>
-              </svg>
-            </a>
-            <a
-              href="https://medium.com/@theo.wolf"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Medium"
-            >
-              <svg
-                class="contact-icon"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use href="#icon-medium"></use>
-              </svg>
-            </a>
-            <a
-              href="https://scholar.google.com/citations?user=TRAhumoAAAAJ"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Google Scholar"
-            >
-              <svg
-                class="contact-icon"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use href="#icon-scholar"></use>
-              </svg>
-            </a>
-            <a
-              href="https://twitter.com/TheoW0lf"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="X"
-            >
-              <svg
-                class="contact-icon"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use href="#icon-x"></use>
-              </svg>
-            </a>
+          <div class="entry-list">
+            <article class="entry-row outreach-entry">
+              <div class="entry-copy">
+                <p class="entry-meta">2026 · Research talks · Panel chair</p>
+                <h3>BOLD collaboration week</h3>
+                <ul class="outreach-details">
+                  <li>
+                    Panel chair: <em>After AGI, what's left to research?</em>.
+                  </li>
+                  <li>
+                    Research talk:
+                    <em>Plasmax: Differentiable and Parallelizable Tokamak
+                    Control</em>.
+                  </li>
+                  <li>
+                    AI4Science workshop talk:
+                    <em>How Machine Learning Can Accelerate Nuclear Fusion
+                    Research</em>.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="entry-row outreach-entry">
+              <div class="entry-copy">
+                <p class="entry-meta">
+                  2026 · Workshop organizer · Panel chair
+                </p>
+                <h3>BOLD Festival</h3>
+                <ul class="outreach-details">
+                  <li>Organizer: <em>Efficient Adaptation and Embodied Learning Workshop</em>.</li>
+                  <li>
+                    Panel chair: Alessandro Suglia (Edinburgh),
+                    Antoine Cully (Imperial), Elahe Arani (Wayve), and
+                    Michael Dennis (GDM).
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="entry-row outreach-entry">
+              <div class="entry-copy">
+                <p class="entry-meta">2024 · UCL Engineering</p>
+                <h3>London 2050</h3>
+                <ul class="outreach-details">
+                  <li>Talk: <em>Machine Learning for Heavy Industry</em>.</li>
+                  <li>Panel member: <em>How LLMs Are Affecting Businesses</em>.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="entry-row outreach-entry" id="other-talks">
+              <div class="entry-copy">
+                <p class="entry-meta">2022–2025 · Talks</p>
+                <h3>Other Talks</h3>
+                <ul class="outreach-details">
+                  <li>
+                    AIMS conference (2025):
+                    <em>Discovering new RL algorithms from Data</em>.
+                  </li>
+                  <li>
+                    UCL Statistics Society (2023):
+                    <em>Machine Learning Engineer at a Climate Tech Startup</em>.
+                  </li>
+                  <li>
+                    UCL AI for Sustainable Development (2022):
+                    <em>Tips on Running a Successful Masters Project</em>.
+                  </li>
+                  <li>
+                    UCL AI Centre (2022):
+                    <em>What's the Big Deal with the James Webb Space Telescope?</em>
+                  </li>
+                </ul>
+              </div>
+            </article>
           </div>
         </div>
       </section>
+
     </main>
 
     <footer class="site-footer">
       <p>© 2026 Theo Wolf</p>
-      <div class="footer-links">
-        <a href="third-party-notices.txt">Icon credits</a>
-        <a href="#top">Back to orbit <span aria-hidden="true">↑</span></a>
-      </div>
     </footer>
   </body>
 </html>
